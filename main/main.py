@@ -4,7 +4,7 @@ from sqlalchemy import UniqueConstraint
 from flask_cors import CORS
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///flask.db"
 CORS(app)
 
 db = SQLAlchemy(app)
